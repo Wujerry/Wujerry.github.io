@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>JerryImba</title>
+    <title>Welcome to Jekyll!</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="JS Is Imba">
-    <link rel="canonical" href="http://www.jerryimba.com/">
+    <link rel="canonical" href="http://www.jerryimba.com/jekyll/update/2014/06/26/welcome-to-jekyll/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href=" /css/main.css ">
@@ -26,133 +26,54 @@
 </head>
 
 
-    <body unresolved touch-action="auto">
-
-    <!-- <header class="site-header"> -->
-<header style="background-color:white;">
-    <paper-tabs selected="1" class="transparent-teal font14 paper-shadow-bottom paper-shadow-bottom-z-1">
-        <paper-tab>归档</paper-tab>
-        <paper-tab>文章</paper-tab>
-        <paper-tab>关于我</paper-tab>
-
-    </paper-tabs>
-    <script>
-    var flag =false,
-        tabs = document.querySelector('paper-tabs');
-    tabs.addEventListener('core-select', function() {
-        console.log("Selected: " + tabs.selected);
-        // var hrefs = [
-        // 'http://www.jerryimba.com/archive',
-        // 'http://www.jerryimba.com',
-        // 'http://www.jerryimba.com/about'
-        // ]
-        var hrefs = [
-        'http://localhost:8888/archive',
-        'http://localhost:8888',
-        'http://localhost:8888/about/'
-        ]
-        if(flag) window.location.href = hrefs[tabs.selected];
-        console.log(hrefs[tabs.selected]);
-        flag = true;
-    });
-    </script>
-
-</header>
+<body unresolved touch-action="auto">
 
 
-    <div class="page-content">
-      <div class="wrap">
-      <div class="home">
+    <core-scroll-header-panel >
 
-  <h1></h1>
+        <core-toolbar class="">
 
-  <ul class="posts">
-    
-      <li>
-        
-        <div class="container" style="background-color:#00bcd4;" layout vertical center>
-          <paper-shadow z="1" class="width100">
-            <post-card class="">
-            <div class="pd20">
-                <span class="post-date">Jun 30, 2014</span>
-                <a class="post-link" href="/jekyll/update/2014/06/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">正则表达式学习记录</a>
-                <p class="font15p">正则表达式的一些基础、常用字符和用法</p>
-                <div>
-                  <paper-button  class='tagBtn' label="Tags:"></paper-button>
-                    
-                       <paper-button  class='tagBtn' label="Regular" raisedButton></paper-button>
-                    
-                </div>
-                
-            </div>
-            </post-card>
-        </paper-shadow>
+            <core-icon-button id="backBtn" icon="arrow-back"></core-icon-button>
+            <div flex></div>
+            <div class="bottom indent title">文章</div>
 
-        </div>
-      </li>
-    
-      <li>
-        
-        <div class="container" style="background-color:#00bcd4;" layout vertical center>
-          <paper-shadow z="1" class="width100">
-            <post-card class="">
-            <div class="pd20">
-                <span class="post-date">Jun 26, 2014</span>
-                <a class="post-link" href="/jekyll/update/2014/06/26/welcome-to-jekyll/">Welcome to Jekyll!</a>
-                <p class="font15p"><p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
+        </core-toolbar>
+
+        <div class="content">
+
+            <div class="page-content">
+                <div class="wrap">
+                    <div class="post">
+
+                        <header class="post-header">
+                            <h1>Welcome to Jekyll!</h1>
+                            <p class="meta">Jun 26, 2014</p>
+                        </header>
+
+                        <article class="post-content">
+                            <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
 To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
 
-</p>
-                <div>
-                  <paper-button  class='tagBtn' label="Tags:"></paper-button>
-                    
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
+
+
+                        </article>
+
+                        <div id="disqus_thread"></div>
+
+                    </div>
                 </div>
-                
             </div>
-            </post-card>
-        </paper-shadow>
-
-        </div>
-      </li>
-    
-      <li>
-        
-        <div class="container" style="background-color:#00bcd4;" layout vertical center>
-          <paper-shadow z="1" class="width100">
-            <post-card class="">
-            <div class="pd20">
-                <span class="post-date">Jun 25, 2014</span>
-                <a class="post-link" href="/jekyll/update/2014/06/25/welcome-to-jekyll/">Welcome to Jekyll!</a>
-                <p class="font15p"><p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
-
-</p>
-                <div>
-                  <paper-button  class='tagBtn' label="Tags:"></paper-button>
-                    
-                       <paper-button  class='tagBtn' label="yoyoyoy" raisedButton></paper-button>
-                    
-                       <paper-button  class='tagBtn' label="gogoggo" raisedButton></paper-button>
-                    
-                </div>
-                
-            </div>
-            </post-card>
-        </paper-shadow>
-
-        </div>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
-
-      </div>
-    </div>
-
-    <footer class="site-footer">
+            
+            <footer class="site-footer">
 
   <div class="wrap">
 
@@ -214,6 +135,38 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 
 </footer>
 
+        </div>
 
-    </body>
+    </core-scroll-header-panel>
+
+
+
+    
+  <script>
+  	var btn = document.querySelector('#backBtn');
+    btn.addEventListener('click', function() {
+        var hrefs = [
+        'http://www.jerryimba.com',
+        ];
+         window.location.href = hrefs[0];
+    });
+  </script>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'jerryimbablog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+</body>
+
 </html>

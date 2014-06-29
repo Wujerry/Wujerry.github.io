@@ -1,0 +1,11 @@
+# Site settings
+title: JerryImba
+email: wujerry116@gmail.com
+description: "JS Is Imba"
+baseurl: ""
+url: "http://www.jerryimba.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+safe: false
