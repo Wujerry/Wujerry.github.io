@@ -64,29 +64,46 @@ comments: true
 
 ##JavaScript用法
 * test  检查指定的字符串是否存在
-        var str = 'hellow word!';
-        var reg = /low/gi;
-        console.log(reg.test(str));  //true  参数g为全局  参数i为忽略大小写
+{% highlight javascript %}
+var str = 'hellow word!';
+var reg = /low/gi;
+console.log(reg.test(str));  //true  参数g为全局  参数i为忽略大小写
+{% endhighlight %}
+
 * exec  返回查询值
-        var str = 'hellow word!';
-        var reg = /low/gi;
-        console.log(reg.exec(str));  //low
+{% highlight javascript %}
+var str = 'hellow word!';
+var reg = /low/gi;
+console.log(reg.exec(str));  //low
+{% endhighlight %}
+
 * match  得到查询数组
-        var str = 'hellow word!';
-        var reg = /o/gi;
-        var arrays = str.match(reg);  //返回数组
+{% highlight javascript %}
+var str = 'hellow word!';
+var reg = /o/gi;
+var arrays = str.match(reg);  //返回数组
+{% endhighlight %}
+
 * search  返回搜索位置  类似于indexof
-        var str = 'hellow word!';
-        var reg = /o/gi;
-        var num= str.search(reg);  // 4
+{% highlight javascript %}
+var str = 'hellow word!';
+var reg = /o/gi;
+var num= str.search(reg);  // 4
+{% endhighlight %}
+
 * replace  替换字符  利用正则替换
-        var str = 'hellow word!';
-        var reg = /o/gi;
-        var num= str.replace(reg,'l');  // 'helllw wlrd!'
+{% highlight javascript %}
+var str = 'hellow word!';
+var reg = /o/gi;
+var num= str.replace(reg,'l');  // 'helllw wlrd!'
+{% endhighlight %}
+
 * split   利用正则分割数组
-        var str = 'hellow word!';
-        var reg = /o/gi;
-        var arrays = str.split(reg);  //返回数组
+{% highlight javascript %}
+var str = 'hellow word!';
+var reg = /o/gi;
+var arrays = str.split(reg);  //返回数组
+{% endhighlight %}
 
 
  
