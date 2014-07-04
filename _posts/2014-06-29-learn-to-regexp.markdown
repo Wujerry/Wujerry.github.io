@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "正则表达式学习记录"
-date:   2014-06-29 20:53:01
-categories: jekyll update
-tags: Regular
+description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+modified: 2014-06-29 20:53:01
+tags: [Regular]
 excerpt: 正则表达式的一些基础、常用字符和用法
 comments: true
+share: true
 ---
 
 ##Egrep 元字符
