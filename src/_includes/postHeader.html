@@ -1,0 +1,26 @@
+<!-- <header class="site-header"> -->
+<header style="background-color:white;">
+
+    <paper-tabs selected="1" class="transparent-teal font14 paper-shadow-bottom paper-shadow-bottom-z-1">
+        <paper-tab>归档</paper-tab>
+        <paper-tab>文章</paper-tab>
+        <paper-tab>关于我</paper-tab>
+
+    </paper-tabs>
+    <script>
+    var flag =false,
+        tabs = document.querySelector('paper-tabs');
+    tabs.addEventListener('core-select', function() {
+        console.log("Selected: " + tabs.selected);
+        var hrefs = [
+        'http://www.jerryimba.com/archive.html',
+        'http://www.jerryimba.com',
+        'http://www.jerryimba.com/about.html'
+        ]
+        if(flag) window.location.href = hrefs[tabs.selected];
+        console.log(hrefs[tabs.selected]);
+        flag = true;
+    });
+    </script>
+
+</header>

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+
+
+<div class="home">
+
+  <h1></h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        
+        <div class="container" style="background-color:#00bcd4;" layout vertical center>
+          <paper-shadow z="1" class="width100">
+            <post-card class="">
+            <div class="pd20">
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <p class="font15p">{{post.excerpt}}</p>
+                <div>
+                  <paper-button  class='tagBtn' label="Tags:"></paper-button>
+                    {% for itag in post.tags %}
+                       <paper-button  class='tagBtn' label="{{itag}}" raisedButton></paper-button>
+                    {% endfor %}
+                </div>
+                
+            </div>
+            </post-card>
+        </paper-shadow>
+
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
