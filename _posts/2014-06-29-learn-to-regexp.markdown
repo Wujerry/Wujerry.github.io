@@ -105,6 +105,22 @@ var reg = /o/gi;
 var arrays = str.split(reg);  //返回数组
 {% endhighlight %}
 
+##Python用法
+
+{% highlight python %}
+import re
+m = re.search('[0-9]','abcdef9ghijk')
+print(m.group(0))
+
+#######常用表达式
+
+m = re.search(pattern, string)  # 搜索整个字符串，直到发现符合的子字符串。
+m = re.match(pattern, string)   # 从头开始检查字符串是否符合正则表达式。必须从字符串的第一个字符开始就相符。
+re.split()    # 根据正则表达式分割字符串， 将分割后的所有子字符串放在一个表(list)中返回
+re.findall()  # 根据正则表达式搜索字符串，将所有符合的子字符串放在一给表(list)中返回
+{% endhighlight %}
+
+
 
  
 
