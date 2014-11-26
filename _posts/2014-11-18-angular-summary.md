@@ -22,8 +22,25 @@ share: true
 
 ##AngularJS
 
-#### 1.xxxxxx
-
+#### 1.检查当前页面$watcher数量(2000以下最好)
+{% highlight javascript %} 
+	(function () { 
+	    var root = $(document.getElementsByTagName('body'));
+	    var watchers = [];
+	    var f = function (element) {
+	        if (element.data().hasOwnProperty('$scope')) {
+	            angular.forEach(element.data().$scope.$$watchers, function (watcher) {
+	                watchers.push(watcher);
+	            });
+	        }
+	        angular.forEach(element.children(), function (childElement) {
+	            f($(childElement));
+	        });
+	    };
+	     f(root);
+	    console.log(watchers.length);
+	})()
+{% endhighlight %}
 
 ---------
 > Written with [StackEdit](https://stackedit.io/).
