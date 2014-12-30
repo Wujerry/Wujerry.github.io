@@ -16,6 +16,18 @@ share: true
 - time : ``hh-mm-ss`` eg: '10:20:30' 或者 '10:20'
 - number: 类型必须为number,String无法赋值
 
+#### 2. 推荐封装函数写法
+{% highlight javascript %} 
++function ($) {
+ //your code here
+}(jQuery)
+{% endhighlight %}
+
+> 这样写可以避免之前的括号没有闭合，导致的冲突
+
+
+    
+
 
 
 ------------
