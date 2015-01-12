@@ -15,18 +15,18 @@ share: true
 
 ##### 升级``python``到2.7.8
 mac下使用``brew``升级
-{% highlight perl linenos %} 
+{% highlight perl %} 
 brew install python
 {% endhighlight %}
 
 调整``PATH``
-{% highlight perl linenos %} 
+{% highlight perl %} 
 brew doctor
 {% endhighlight %}
 
 ##### 升级``pyopenssl``到0.14
 mac下使用``easy_install``升级
-{% highlight perl linenos %} 
+{% highlight perl %} 
 easy_install PyOpenSSL
 easy_install PyCrypto
 {% endhighlight %}
