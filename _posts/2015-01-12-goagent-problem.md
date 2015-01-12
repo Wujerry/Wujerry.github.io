@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-## Mac上GoAgent 3.2.3 无法使用的解决方法
+
 
 升级GoAgent3.2.3版本后发现在Windows下面使用无任何问题,Mac下面一直无法使用.
 后来在[issue](https://code.google.com/p/goagent/issues/detail?id=19213&colspec=ID%20Opened%20Reporter%20Modified%20Summary%20Stars)的40楼找到了问题所在
