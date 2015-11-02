@@ -65,7 +65,7 @@ function minErr(module, ErrorConstructor) {
     message += '\nhttp://errors.angularjs.org/"NG_VERSION_FULL"/' +
       (module ? module + '/' : '') + code;
 
-	//  paramPrefix在循环初定义为 '?' , 之后变为'&' , 又学到了
+    //paramPrefix在循环初定义为 '?' , 之后变为'&' , 又学到了
     for (i = SKIP_INDEXES, paramPrefix = '?'; i < templateArgs.length; i++, paramPrefix = '&') {
       message += paramPrefix + 'p' + (i - SKIP_INDEXES) + '=' +
         encodeURIComponent(toDebugString(templateArgs[i]));
