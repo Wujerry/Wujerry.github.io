@@ -19,4 +19,8 @@ share: true
 - ``angularFiles.js``
    此文件描述了AngularJs的一个大概的组成结构，同时也是build的配置文件，构建工具会根据此配置文件将所有js文件组装在一起，然后压缩发布。
 
+###目录
+
+ -  [minErr.js](http://www.jerryimba.com/angular-source-minerr/)
+
 > Written with [StackEdit](https://stackedit.io/).
